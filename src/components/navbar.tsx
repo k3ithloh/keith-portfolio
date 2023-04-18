@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <nav className="  mx-auto rounded-lg border-b px-5 py-4 shadow dark:border-gray-800">
+    <nav className="  mx-auto rounded-lg border-b px-12 py-4 shadow dark:border-gray-800">
       <div className=" mx-auto flex flex-wrap items-center  justify-between gap-x-5  md:flex-nowrap">
         <div className="w-full flex-grow justify-between gap-x-2 md:flex">
           <div>
