@@ -1,11 +1,33 @@
 const Navbar = () => {
-  return(
-    <nav className="  mx-auto rounded-lg border border-gray-200 bg-gray-50 py-3 px-5 shadow dark:border-gray-700 dark:bg-gray-800">
+  return (
+    <nav className="  mx-auto rounded-lg border-b px-5 py-4 shadow dark:border-gray-800">
       <div className=" mx-auto flex flex-wrap items-center  justify-between gap-x-5  md:flex-nowrap">
-          <div className="w-full flex-grow justify-between gap-x-2 md:flex">
-            
+        <div className="w-full flex-grow justify-between gap-x-2 md:flex">
+          <div>
+            <a href="/" className="text-xl font-bold">
+              Keith Loh
+            </a>
           </div>
+          <div className="flex flex-wrap items-center justify-between gap-x-2 md:flex-nowrap">
+            <a href="/" className="text-base font-medium">
+              <span className="text-blue-600">01. </span>
+              <span>About</span>
+            </a>
+            <a href="/about" className=" text-base font-medium">
+              <span className="text-blue-600">02. </span>
+              <span>Experience</span>
+            </a>
+            <a href="/projects" className="text-base font-medium">
+            <span className="text-blue-600">03. </span>
+            <span className="">Projects</span>
+            </a>
+            <a href="/projects" className="text-base font-medium">
+            <span className="text-blue-600">04. </span>
+            <span className="">Contact</span>
+            </a>
           </div>
+        </div>
+      </div>
     </nav>
   );
 };
