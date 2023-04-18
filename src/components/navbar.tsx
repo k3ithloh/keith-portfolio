@@ -6,9 +6,9 @@ const Navbar = () => {
       <div className=" mx-auto flex flex-wrap items-center  justify-between gap-x-5  md:flex-nowrap">
         <div className="w-full flex-grow justify-between gap-x-2 md:flex">
           <div>
-            <a href="/" className="text-xl font-bold">
+            <Link href="/" className="text-xl font-bold">
               Keith Loh
-            </a>
+            </Link>
           </div>
           <div className="flex flex-wrap items-center justify-between gap-x-2 md:flex-nowrap">
             <Link href="/" className="text-base font-medium">
