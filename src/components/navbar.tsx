@@ -6,26 +6,26 @@ const Navbar = () => {
       <div className=" mx-auto flex flex-wrap items-center  justify-between gap-x-5  md:flex-nowrap">
         <div className="w-full flex-grow justify-between gap-x-2 md:flex">
           <div>
-            <Link href="/" className="text-xl font-bold">
+            <Link href="/" className="text-2xl font-bold hover:text-jet">
               Keith Loh
             </Link>
           </div>
           <div className="flex flex-wrap items-center justify-between gap-x-6 md:flex-nowrap">
-            <Link href="/" className="text-base font-medium">
-              <span className="text-blue-500">01. </span>
-              <span>About</span>
+            <Link href="/#about" className="text-lg font-medium">
+              <span className="text-jet">01. </span>
+              <span className="hover:text-jet">About</span>
             </Link>
-            <Link href="/about" className=" text-base font-medium">
-              <span className="text-blue-500">02. </span>
-              <span>Experience</span>
+            <Link href="/#experience" className=" text-lg font-medium">
+              <span className="text-jet">02. </span>
+              <span className="hover:text-jet">Experience</span>
             </Link>
-            <Link href="/projects" className="text-base font-medium">
-            <span className="text-blue-500">03. </span>
-            <span className="">Projects</span>
+            <Link href="/#projects" className="text-lg font-medium">
+            <span className="text-jet">03. </span>
+            <span className="hover:text-jet">Projects</span>
             </Link>
-            <Link href="/projects" className="text-base font-medium">
-            <span className="text-blue-500">04. </span>
-            <span className="">Contact</span>
+            <Link href="/#contact" className="text-lg font-medium">
+            <span className="text-jet">04. </span>
+            <span className="hover:text-jet">Contact</span>
             </Link>
           </div>
         </div>
