@@ -2,7 +2,7 @@ import React from 'react';
 
 const IconTwitter = () => (
     <svg
-    className="w-4 h-4 text-ebony fill-current hover:text-white hover:scale-110"
+    className="w-4 h-4 lg:w-5 lg:h-5 xl:w-6 xl:h-6 text-ebony fill-current hover:text-white hover:scale-110"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24">
     <path

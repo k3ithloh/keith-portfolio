@@ -13,7 +13,7 @@ const Icon = ({ name }: IconProps) => {
     switch (name) {
         case "Twitter":
             return <IconTwitter />;
-        case "GitHubGitHub":
+        case "GitHub":
             return <IconGithub />;
         case "Linkedin":
             return <IconLinkedin />;
