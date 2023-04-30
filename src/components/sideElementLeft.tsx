@@ -7,7 +7,7 @@ const SideElementLeft = () => {
     return (
         <div className=" flex flex-col justify-center place-items-center">
           {config.socialMedia &&
-          config.socialMedia.map(({ url, name, src }: SocialMedia, i) => (
+          config.socialMedia.map(({ url, name }: SocialMedia, i) => (
             <li className="list-none mb-3" key={i}>
               <Link href={url} aria-label={name} target="_blank" rel="noopener noreferrer">
                 <Icon name={name} />
