@@ -5,6 +5,7 @@ import { SessionProvider } from "next-auth/react";
 import localFont from "next/font/local";
 import Navbar from "~/components/navbar";
 import Footer from "~/components/footer";
+import Side from "~/components/side";
 
 import { api } from "~/utils/api";
 import "~/styles/globals.css";
@@ -27,6 +28,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
       <SessionProvider session={session}>
         <Navbar></Navbar>
         <Component {...pageProps} />
+        <Side></Side>
         <Footer></Footer>
       </SessionProvider>
     </main>
