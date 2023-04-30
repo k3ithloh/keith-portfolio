@@ -6,13 +6,13 @@ const Hero = () => {
       <h5 className="mb-4 font-mono text-lg text-ebony md:text-xl">Hi my name is </h5>
       <h1 className="mb-4 font-bold text-4xl text-white md:text-6xl">Keith Loh.</h1>
       <h1 className="mb-8 font-bold text-4xl text-silver md:text-6xl">
-        <span className="relative">
+        <span className="relative overflow-x-hidden">
           <span className="text-brand-accent overflow-x-hidden whitespace-nowrap pt-2">
           Aspiring Software Engineer
           </span>
           <span className="after:content-[''] after:block after:absolute after:w-2 after:h-full
         after:dark:bg-ebony after:bg-gray-900 after:animate-cursor absolute left-0 inline-block w-full bg-white
-        dark:bg-platinum -bottom-0 -top-1 animate-type will-change-transform"></span>
+        dark:bg-platinum -bottom-0 -top-1 animate-type will-change-transform overflow-x-hidden"></span>
       </span>
       </h1>
       <div className="text-lg text-ebony md:text-xl">
