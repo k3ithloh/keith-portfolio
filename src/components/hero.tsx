@@ -10,7 +10,7 @@ const Hero = () => {
           <span className="text-brand-accent overflow-x-hidden whitespace-nowrap pt-2">
           Aspiring Software Engineer
           </span>
-          <span className="after:content-[''] [font-family:monospace] after:block after:absolute after:w-2 after:h-full
+          <span className="after:content-[''] after:block after:absolute after:w-2 after:h-full
         after:dark:bg-ebony after:bg-gray-900 after:animate-cursor absolute left-0 inline-block w-full bg-white
         dark:bg-platinum -bottom-0 -top-1 animate-type will-change-transform"></span>
       </span>
