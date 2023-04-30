@@ -16,7 +16,7 @@ const Hero = () => {
       </span>
       </h1>
       <div className="text-lg text-ebony md:text-xl">
-        I'm a sophomore Information Systems student at SMU.
+        I&apos;m a sophomore Information Systems student at SMU.
       </div>
       <div className="text-lg text-ebony md:text-xl">
         Currently building tech for public good at <Link href="https://www.tech.gov.sg/" target="_blank" className="font-bold text-silver hover:underline underline-offset-2">GovTech</Link>.

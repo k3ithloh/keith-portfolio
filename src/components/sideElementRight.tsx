@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import config, {Email} from '~/config';
+
 
 const SideElementRight = () => {
     return (
