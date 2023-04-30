@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import SideElementLeft from "./sideElementLeft";
 import SideElementRight from "./sideElementRight";
 

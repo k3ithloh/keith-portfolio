@@ -6,6 +6,7 @@ import localFont from "next/font/local";
 import Navbar from "~/components/navbar";
 import Footer from "~/components/footer";
 import Side from "~/components/side";
+import Hero from "~/components/hero";
 
 import { api } from "~/utils/api";
 import "~/styles/globals.css";
@@ -27,6 +28,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
     <main className={askpekta.className}>
       <SessionProvider session={session}>
         <Navbar></Navbar>
+        <Hero></Hero>
         <Component {...pageProps} />
         <Side></Side>
         <Footer></Footer>

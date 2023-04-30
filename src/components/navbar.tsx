@@ -16,7 +16,6 @@ const Navbar = () => {
               </div>
             </Link>
           </div>
-
           <button
             className="flex cursor-pointer md:hidden items-center px-3 py-2 border rounded text-ebony border-ebony hover:text-white hover:border-white"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -32,11 +31,7 @@ const Navbar = () => {
                 <path d="M0 3h20v2H0zm0 6h20v2H0zm0 6h20v2H0z" />
                 </svg>)
               }
-            
-            
-
           </button>
-
           <div
             className={`${
               menuOpen ? 'block' : 'hidden'
