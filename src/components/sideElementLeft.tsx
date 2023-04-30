@@ -5,7 +5,7 @@ import Icon from './icons/icons';
 
 const SideElementLeft = () => {
     return (
-        <div className=" flex flex-col justify-center place-items-center">
+        <div className=" flex flex-col justify-center place-items-center h-full">
           {config.socialMedia &&
           config.socialMedia.map(({ url, name }: SocialMedia, i) => (
             <li className="list-none mb-3" key={i}>

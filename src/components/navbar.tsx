@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="w-full flex justify-between gap-x-2 md:flex">
           <div>
             <Link href="/">
-              <div className="text-xl font-bold text-ebony transition ease-in-out delay-150 hover:text-white duration-300 ">
+              <div className="text-xl font-bold text-ebony transition ease-in-out delay-150 hover:text-white duration-300 xl:text-3xl lg:text-2xl">
                 Keith Loh
               </div>
             </Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
               {config.navLinks &&
                 config.navLinks.map(({ url, name }: NavLink, i: number) => (
                   <li
-                    className="relative text-sm
+                    className="relative text-sm xl:text-lg lg:text-base
                   font-medium before:absolute before:bottom-0 before:left-0 before:block before:h-[2px] 
                     before:w-full before:origin-top-left before:scale-x-0
                     before:bg-white before:transition before:duration-300
