@@ -7,6 +7,7 @@ import Navbar from "~/components/navbar";
 import Footer from "~/components/footer";
 import Side from "~/components/side";
 import Hero from "~/components/hero";
+import About from "~/components/about";
 
 import { api } from "~/utils/api";
 import "~/styles/globals.css";
@@ -29,6 +30,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
       <SessionProvider session={session}>
         <Navbar></Navbar>
         <Hero></Hero>
+        <About></About>
         <Component {...pageProps} />
         <Side></Side>
         <Footer></Footer>

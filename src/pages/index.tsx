@@ -17,14 +17,13 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex justify-center">
         {/* NavBar */}
-        <div className=""></div>
-
+        {/* <div className=""></div>
         <div className="container flex flex-col items-center justify-center">
           <div className="text">discord login</div>
           <div className="flex flex-col items-center gap-2">
             <AuthShowcase />
           </div>
-        </div>
+        </div> */}
       </main>
     </>
   );

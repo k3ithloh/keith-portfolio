@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div>
+    <div id="/">
       <div className="mx-8 grid grid-rows-1 justify-start content-center ml-16 sm:ml-32 lg:ml-56 mt-96 overflow-hidden">
       <h5 className="mb-4 font-mono text-base md:text-lg text-ebony lg:text-xl xl:text-2xl">Hi my name is </h5>
       <h1 className="mb-4 font-bold text-2xl md:text-4xl text-white lg:text-6xl xl:text-7xl">Keith Loh.</h1>
@@ -17,13 +17,13 @@ const Hero = () => {
       </span>
       </h1>
     </div>
-    <div className="flex flex-wrap ml-16 sm:ml-32 lg:ml-56 mb-96 ">
+    <div className="flex flex-wrap ml-16 sm:ml-32 lg:ml-56 mb-48 ">
       <div className="text-base md:text-lg text-ebony lg:text-xl xl:text-2xl w-full">
         I&apos;m a sophomore Information Systems student at SMU.
       </div>
       <br></br>
       <div className="text-base md:text-lg text-ebony lg:text-xl xl:text-2xl">
-        Currently building tech for public good at&nbsp;<Link href="https://www.tech.gov.sg/" target="_blank" className="font-bold text-silver hover:underline underline-offset-2"> GovTech</Link>.
+        Currently building tech for public good at&nbsp;<Link href="https://www.tech.gov.sg/" target="_blank" className="font-bold text-silver hover:underline underline-offset-2">GovTech</Link>.
       </div>
     </div>
     </div>

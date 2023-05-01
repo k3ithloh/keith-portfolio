@@ -48,7 +48,7 @@ const Navbar = () => {
                     before:ease-in-out before:content-[''] hover:text-white before:hover:scale-x-100  mx-6 "
                     key={i}
                   >
-                    <Link href={url}>
+                    <Link href={url} scroll={false}>
                       <div onClick={() => setMenuOpen(false)}>{name}</div>
                     </Link>
                   </li>
