@@ -15,4 +15,7 @@ body {
     font-display: auto;
     src: url('/public/fonts/Nunito-Regular.ttf') format('ttf');
   }
+  html {
+    scroll-behavior: smooth;
+  }
 }

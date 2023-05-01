@@ -2,7 +2,6 @@ import { type NextPage } from "next";
 import Head from "next/head";
 // import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
-
 import { api } from "~/utils/api";
 
 const Home: NextPage = () => {
@@ -17,14 +16,13 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex justify-center">
         {/* NavBar */}
-        <div className=""></div>
-
+        {/* <div className=""></div>
         <div className="container flex flex-col items-center justify-center">
           <div className="text">discord login</div>
           <div className="flex flex-col items-center gap-2">
             <AuthShowcase />
           </div>
-        </div>
+        </div> */}
       </main>
     </>
   );
