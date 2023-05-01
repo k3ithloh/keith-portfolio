@@ -5,7 +5,7 @@ const About = () => {
       <div className="mx-8 flex flex-wrap mt-28 w-full max-w-6xl">
         <h1 className="mt-64 mb-4 font-bold text-2xl md:text-6xl text-white lg:text-6xl xl:text-7xl grow ml-8">About Me.</h1>
         <div className="w-full grid grid-cols-2 -mt-20">
-          <div className="col-span-1 text-base md:text-lg text-ebony lg:text-xl xl:text-2xl content-center mt-28 ml-8"> I&apos;m a sophmore year Information Systems student at Singapore Management University, majoring in digital cloud solutions  and business analytics. A highly motivated individual with a keen eye for detail, who constantly strive to improve his skills.
+          <div className="col-span-1 text-base md:text-lg text-ebony lg:text-xl xl:text-2xl content-center mt-28 ml-8"> I&apos;m a sophmore year Information Systems student at Singapore Management University, majoring in digital cloud solutions  and business analytics. A highly motivated individual with a keen eye for detail, who constantly strives to improve his skills.
           <br></br><br></br>I&apos;m passionate about software development, web3, mechanical keyboards, photography and Formula 1.
           <br></br> <br></br> Here are the technologies I&apos;ve been working with 
           <br></br><br></br>
