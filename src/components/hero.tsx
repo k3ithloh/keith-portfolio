@@ -17,7 +17,7 @@ const Hero = () => {
       </span>
       </h1>
     </div>
-    <div className="flex flex-wrap ml-16 sm:ml-32 lg:ml-56 mb-48 ">
+    <div className="flex flex-wrap ml-16 sm:ml-32 lg:ml-56 mb-64 ">
       <div className="text-base md:text-lg text-ebony lg:text-xl xl:text-2xl w-full">
         I&apos;m a sophomore Information Systems student at SMU.
       </div>
