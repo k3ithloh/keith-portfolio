@@ -4,11 +4,11 @@ const About = () => {
   return (
     <div id="about" className="flex flex-col justify-center items-center px-10 h-[95vh]">
       <div className="flex max-w-6xl flex-wrap">
-        <h1 className="mb-6 grow text-2xl font-bold text-white md:text-4xl lg:text-6xl xl:text-7xl">
+        <h1 className="mb-2 lg:mb-0 grow text-2xl font-bold text-white md:text-4xl lg:text-6xl xl:text-7xl">
           About Me.
         </h1>
-        <div className=" grid w-full grid-cols-1 lg:grid-cols-2 place-items-center">
-          <div className="col-span-1 mt-0 md:mt-12 content-center text-sm text-ebony md:text-base lg:text-lg xl:text-xl pb-12 md:pb-32">
+        <div className=" grid w-full grid-cols-1 lg:grid-cols-2 place-items-center ">
+          <div className="col-span-1 mt-0 md:mt-12 content-center text-sm text-ebony md:text-base lg:text-lg xl:text-xl pb-12 md:pb-20">
             {" "}
             I&apos;m a sophmore year Information Systems student at Singapore
             Management University, majoring in digital cloud solutions and
