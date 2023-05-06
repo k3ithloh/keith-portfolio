@@ -27,13 +27,31 @@ const Experience = () => {
       className="flex h-[95vh] flex-col items-center justify-center px-10 md:px-28"
     >
       <div className="flex max-w-6xl flex-wrap">
-        <h1 className="mb-4 grow text-2xl font-bold text-white md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
+        <h1 className="mt-12 mb-4 grow text-2xl font-bold text-white md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
           Where I&apos;ve Worked
         </h1>
-        <div className="py-8">
+        <div className="py-8 ml-4 md:ml-10">
           <ol className="relative border-l border-white  dark:border-white">
-            <li className="mb-10 pl-5">
-              <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700"></div>
+            <li className="mb-10 pl-12">
+              <div className="absolute flex -left-[18px] md:-left-8 mt-0 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700">
+                <Link href="https://www.tech.gov.sg/" target="_blank">
+                  <Image
+                        className="m-1 h-6 w-auto md:h-12 animate-ping inline-flex absolute opacity-25
+                        duration-300"
+                        width="0"
+                        height="0"
+                        src="/img/govtech.svg"
+                        alt="GovTech"
+                      />
+                  <Image
+                        className="m-1 h-6 w-auto md:h-12 inline-flex relative"
+                        width="0"
+                        height="0"
+                        src="/img/govtech.svg"
+                        alt="GovTech"
+                      />
+                </Link>
+              </div>
               <time className="mb-2 mt-2 text-sm font-normal leading-none text-jet dark:text-jet lg:text-base xl:text-lg 2xl:text-xl">
                 May 2023 - Present
               </time>
@@ -46,7 +64,7 @@ const Experience = () => {
               <h3 className="mt-0 text-lg font-semibold text-ebony dark:text-ebony l:text-xl xl:text-2xl 2xl:text-3xl">
                 Software Engineer Intern
               </h3>
-              <div className="my-4 flex flex-wrap gap-1 px-2 py-2">
+              <div className="my-4 flex flex-wrap gap-1 py-2">
                 <Tooltip
                   className="bg-silver"
                   content="Typescript"
@@ -131,8 +149,18 @@ const Experience = () => {
                 </Tooltip>
               </div>
             </li>
-            <li className="mb-10 pl-5">
-              <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700"></div>
+            <li className="mb-10 pl-12">
+              <div className="absolute -left-[18px] md:-left-8 mt-0 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700">
+                  <Link href="https://solana.fm/" target="_blank">
+                  <Image
+                      className="m-1 h-6 w-auto md:h-12"
+                      width="0"
+                      height="0"
+                      src="/img/solanafm.svg"
+                      alt="SolanaFM"
+                    />
+                  </Link>
+              </div>
               <time className="mb-2 mt-2 text-sm font-normal leading-none text-jet dark:text-jet lg:text-base xl:text-lg 2xl:text-xl">
                 May 2022 - August 2022
               </time>
@@ -158,7 +186,7 @@ const Experience = () => {
                   </p>
                 </li>
               </ul>
-              <div className="my-4 flex flex-wrap gap-1 px-2 py-2">
+              <div className="my-4 flex flex-wrap gap-1 py-2">
                 <Tooltip
                   className="bg-silver"
                   content="Rust"
@@ -250,8 +278,18 @@ const Experience = () => {
                 </Tooltip>
               </div>
             </li>
-            <li className="mb-10 pl-5">
-              <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700"></div>
+            <li className="mb-10 pl-12">
+              <div className="absolute -left-[18px] md:-left-8 mt-0  rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700">
+              <Link href="https://solana.fm/" target="_blank">
+                  <Image
+                      className="m-1 h-6 w-auto md:h-12"
+                      width="100"
+                      height="100"
+                      src="/img/pba.svg"
+                      alt="PBA Group"
+                    />
+                  </Link>
+              </div>
               <time className="dark:text-jet mb-2 mt-2 text-sm font-normal leading-none text-jet lg:text-base xl:text-lg 2xl:text-xl">
                 September 2018 - Feburary 2019
               </time>
@@ -271,7 +309,7 @@ const Experience = () => {
                   </p>
                 </li>
               </ul>
-              <div className="my-4 flex flex-wrap gap-1 px-2 py-2">
+              <div className="my-4 flex flex-wrap gap-1 py-2">
                 <Tooltip className="bg-silver" content="C#" placement="bottom">
                   <Image
                     className="m-1 h-6 w-auto hover:animate-pulse md:h-12"
