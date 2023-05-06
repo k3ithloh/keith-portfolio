@@ -30,20 +30,20 @@ const Experience = () => {
         <h1 className="mb-4 grow text-2xl font-bold text-white md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
           Where I&apos;ve Worked
         </h1>
-        <div className="">
-          <ol className="relative border-l border-ebony py-2 dark:border-white">
+        <div className="py-8">
+          <ol className="relative border-l border-white  dark:border-white">
             <li className="mb-10 pl-5">
               <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700"></div>
-              <time className="mb-2 mt-2 text-sm font-normal leading-none text-ebony dark:text-ebony lg:text-base xl:text-lg 2xl:text-xl">
+              <time className="mb-2 mt-2 text-sm font-normal leading-none text-jet dark:text-jet lg:text-base xl:text-lg 2xl:text-xl">
                 May 2023 - Present
               </time>
-              <h3 className="mt-2 text-lg font-semibold text-white hover:text-silver dark:text-white l:text-xl xl:text-2xl 2xl:text-3xl 
+              <h3 className="mt-2 text-lg font-semibold text-ebony hover:text-white dark:text-ebony l:text-xl xl:text-2xl 2xl:text-3xl 
               ">
                 <Link href="https://www.tech.gov.sg/" target="_blank">
                   GovTech - Government Digital Services
                 </Link>
               </h3>
-              <h3 className="mt-0 text-lg font-semibold text-white dark:text-white l:text-xl xl:text-2xl 2xl:text-3xl">
+              <h3 className="mt-0 text-lg font-semibold text-ebony dark:text-ebony l:text-xl xl:text-2xl 2xl:text-3xl">
                 Software Engineer Intern
               </h3>
               <div className="my-4 flex flex-wrap gap-1 px-2 py-2">
@@ -133,26 +133,26 @@ const Experience = () => {
             </li>
             <li className="mb-10 pl-5">
               <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700"></div>
-              <time className="mb-2 mt-2 text-sm font-normal leading-none text-ebony dark:text-ebony lg:text-base xl:text-lg 2xl:text-xl">
+              <time className="mb-2 mt-2 text-sm font-normal leading-none text-jet dark:text-jet lg:text-base xl:text-lg 2xl:text-xl">
                 May 2022 - August 2022
               </time>
-              <h3 className="mt-2 text-lg font-semibold text-white hover:text-silver dark:text-white l:text-xl xl:text-2xl 2xl:text-3xl">
+              <h3 className="mt-2 text-lg font-semibold text-ebony hover:text-white dark:text-ebony l:text-xl xl:text-2xl 2xl:text-3xl">
                 <Link href="https://solana.fm/" target="_blank">
                   SolanaFM
                 </Link>
               </h3>
-              <h3 className="mt-0  text-lg font-semibold text-white dark:text-white l:text-xl xl:text-2xl 2xl:text-3xl">
+              <h3 className="mt-0  text-lg font-semibold text-ebony dark:text-ebony l:text-xl xl:text-2xl 2xl:text-3xl">
                 Software Engineer Intern
               </h3>
               <ul className="pl-6 py-2">
                 <li className="list-disc">
-                  <p className="text-sm md:text-base font-normal text-ebony dark:text-ebony lg:text-lg xl:text-xl 2xl:text-2xl">
+                  <p className="text-sm md:text-base font-normal text-jet dark:text-jet lg:text-lg xl:text-xl 2xl:text-2xl">
                     Backend development to support business requirements for
                     SolanaFM&apos;s indexing and explorer processes.
                   </p>
                 </li>
                 <li className="list-disc">
-                  <p className="text-sm md:text-base font-normal text-ebony dark:text-ebony lg:text-lg xl:text-xl 2xl:text-2xl">
+                  <p className="text-sm md:text-base font-normal text-jet dark:text-jet lg:text-lg xl:text-xl 2xl:text-2xl">
                     Optimizied and documentated the codebase to improve
                     developer and user experience.
                   </p>
@@ -252,20 +252,20 @@ const Experience = () => {
             </li>
             <li className="mb-10 pl-5">
               <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700"></div>
-              <time className="dark:ebony mb-2 mt-2 text-sm font-normal leading-none text-ebony lg:text-base xl:text-lg 2xl:text-xl">
+              <time className="dark:text-jet mb-2 mt-2 text-sm font-normal leading-none text-jet lg:text-base xl:text-lg 2xl:text-xl">
                 September 2018 - Feburary 2019
               </time>
-              <h3 className="mt-2 text-lg font-semibold text-white hover:text-silver dark:text-white l:text-xl xl:text-2xl 2xl:text-3xl">
+              <h3 className="mt-2 text-lg font-semibold text-ebony hover:text-white dark:text-ebony l:text-xl xl:text-2xl 2xl:text-3xl">
                 <Link href="https://www.pbarobotics.com/" target="_blank">
                   PBA Group - Robotics & Automation
                 </Link>
               </h3>
-              <h3 className="mt-0 text-lg font-semibold text-white dark:text-white l:text-xl xl:text-2xl 2xl:text-3xl">
+              <h3 className="mt-0 text-lg font-semibold text-ebony dark:text-ebony l:text-xl xl:text-2xl 2xl:text-3xl">
                 R&D Intern
               </h3>
               <ul className="pl-6 py-2">
                 <li className="list-disc">
-                  <p className="text-sm md:text-base font-normal text-ebony dark:text-ebony lg:text-lg xl:text-xl 2xl:text-2xl">
+                  <p className="text-sm md:text-base font-normal text-jet dark:text-jet lg:text-lg xl:text-xl 2xl:text-2xl">
                     Developed internal applications to consolidate and automate
                     the company&apos;s processes.
                   </p>
