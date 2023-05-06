@@ -1,9 +1,15 @@
 import { type Config } from "tailwindcss";
+const withMT = require("@material-tailwind/react/utils/withMT");
 
-export default {
+module.exports = withMT({
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      listStyleImage: {
+        solanafm: 'url("/img/solanafm.svg")',
+        gds: 'url("/img/gds-color.svg")',
+        pba: 'url("/img/pba.svg")',
+      },
       colors: {
         silver : "#b2aca5",
         jet : "#3c3835",
@@ -37,4 +43,4 @@ export default {
     },
   },
   plugins: [],
-} satisfies Config;
+}) satisfies Config;
