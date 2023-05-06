@@ -30,8 +30,8 @@ const Experience = () => {
         <h1 className="mb-4 grow text-2xl font-bold text-white md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
           Where I&apos;ve Worked
         </h1>
-        <div className="">
-          <ol className="relative border-l border-white py-2 dark:border-white">
+        <div className="py-8">
+          <ol className="relative border-l border-white  dark:border-white">
             <li className="mb-10 pl-5">
               <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700"></div>
               <time className="mb-2 mt-2 text-sm font-normal leading-none text-jet dark:text-jet lg:text-base xl:text-lg 2xl:text-xl">
