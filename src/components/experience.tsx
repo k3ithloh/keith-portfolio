@@ -130,7 +130,7 @@ const Experience = () => {
                 <li className="list-disc">
                   <p className="text-sm md:text-base font-normal text-ebony dark:text-ebony l:text-l xl:text-xl 2xl:text-2xl">
                     Backend development to support business requirements for
-                    SolanaFM's indexing and explorer processes.
+                    SolanaFM&apos;s indexing and explorer processes.
                   </p>
                 </li>
                 <li className="list-disc">
@@ -249,7 +249,7 @@ const Experience = () => {
                 <li className="list-disc">
                   <p className="text-sm md:text-base font-normal text-ebony dark:text-ebony l:text-l xl:text-xl 2xl:text-2xl">
                     Developed internal applications to consolidate and automate
-                    the company's processes.
+                    the company&apos;s processes.
                   </p>
                 </li>
               </ul>
