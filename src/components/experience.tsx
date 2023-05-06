@@ -27,7 +27,7 @@ const Experience = () => {
       className="flex h-[95vh] flex-col items-center justify-center px-10 md:px-28"
     >
       <div className="flex max-w-6xl flex-wrap">
-        <h1 className="mt-12 mb-4 grow text-2xl font-bold text-white md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
+        <h1 className="mt-12 -mb-2 md:mb-4 grow text-2xl font-bold text-white md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
           Where I&apos;ve Worked
         </h1>
         <div className="py-8 ml-4 md:ml-10">
@@ -35,14 +35,15 @@ const Experience = () => {
             <li className="mb-10 pl-12">
               <div className="absolute flex -left-[18px] md:-left-8 mt-0 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700">
                 <Link href="https://www.tech.gov.sg/" target="_blank">
-                  <Image
+                  {/* <Image
                         className="m-1 h-6 w-auto md:h-12 animate-ping inline-flex absolute opacity-25
                         duration-300"
                         width="0"
                         height="0"
                         src="/img/govtech.svg"
                         alt="GovTech"
-                      />
+                      /> */}
+                    {/* This is for animation ping */}
                   <Image
                         className="m-1 h-6 w-auto md:h-12 inline-flex relative"
                         width="0"
