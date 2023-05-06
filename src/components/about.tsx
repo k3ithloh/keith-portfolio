@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div id="about" className="flex flex-col items-center px-32">
-      <div className="mx-8 mt-20 flex w-full max-w-6xl flex-wrap">
-        <h1 className="mb-4 ml-8 mt-64 grow text-5xl font-bold text-white md:text-6xl lg:text-6xl xl:text-7xl">
+    <div id="about" className="flex h-[95vh] flex-col items-center justify-center px-28">
+      <div className="mx-8 flex max-w-6xl flex-wrap">
+        <h1 className=" mt-64 text-2xl font-bold text-white md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
           About Me.
         </h1>
         <div className=" grid w-full grid-cols-1 place-items-center lg:grid-cols-2 ">
-          <div className="col-span-1 mt-0 content-center pb-12 text-sm text-ebony md:mt-12 md:pb-20 md:text-base lg:text-lg xl:text-xl">
+          <div className="col-span-1 mt-4 content-center pb-8 text-sm text-ebony md:mt-8 md:pb-16 md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
             {" "}
             I&apos;m a sophmore year Information Systems student at Singapore
             Management University, majoring in digital cloud solutions and
