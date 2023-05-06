@@ -1,12 +1,30 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Tooltip } from "@material-tailwind/react";
+import { useRef, useEffect } from 'react';
 
 const Experience = () => {
+  const experienceRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const setHeight = () => {
+      if (experienceRef.current) {
+        experienceRef.current.style.height = `${window.innerHeight * 0.95}px`;
+      }
+    };
+
+    setHeight();
+    window.addEventListener('resize', setHeight);
+
+    return () => {
+      window.removeEventListener('resize', setHeight);
+    };
+  }, []);
+
   return (
-    <div
+    <div ref={experienceRef}
       id="experience"
-      className="flex h-[95vh] flex-col items-center justify-center px-28"
+      className="flex h-[95vh] flex-col items-center justify-center px-10 md:px-28"
     >
       <div className="flex max-w-6xl flex-wrap">
         <h1 className="mb-4 grow text-2xl font-bold text-white md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">

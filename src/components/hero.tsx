@@ -1,8 +1,26 @@
 import Link from 'next/link';
+import { useRef, useEffect } from 'react';
 
 const Hero = () => {
+  const heroRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const setHeight = () => {
+      if (heroRef.current) {
+        heroRef.current.style.height = `${window.innerHeight * 0.95}px`;
+      }
+    };
+
+    setHeight();
+    window.addEventListener('resize', setHeight);
+
+    return () => {
+      window.removeEventListener('resize', setHeight);
+    };
+  }, []);
+  
   return (
-    <div id="" className="flex justify-center items-center h-[95vh] md:h-[95vh] pb-16">
+    <div ref={heroRef} id="" className="flex justify-center items-center h-[95vh] md:h-[95vh] pb-16 px-10 md:px-28">
       <div className="px-10 grid grid-cols-1 justify-start content-center overflow-hidden items-center ">
       <h5 className=" mb-1 md:mb-4 font-mono text-base md:text-lg text-ebony lg:text-xl xl:text-2xl 2xl:text-3xl">Hi my name is </h5>
       <h1 className="mb-1 md:mb-4 font-bold text-2xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white">Keith Loh.</h1>
