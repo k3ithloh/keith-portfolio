@@ -28,7 +28,7 @@ const Experience = () => {
     >
       <div className="flex max-w-6xl flex-wrap">
         <h1 className="mb-4 grow text-2xl font-bold text-white md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
-          Where I&apos;ve Worked.
+          Where I&apos;ve Worked
         </h1>
         <div className="">
           <ol className="relative border-l border-ebony py-2 dark:border-white">
