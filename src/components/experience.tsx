@@ -173,7 +173,7 @@ const Experience = () => {
                     className="m-1 h-6 w-auto hover:animate-pulse md:h-12"
                     width="0"
                     height="0"
-                    src="/img/dotNet.svg"
+                    src="/img/dotnet.svg"
                     alt=".Net"
                   />
                 </Tooltip>
@@ -272,7 +272,7 @@ const Experience = () => {
                     className="m-1 h-6 w-auto hover:animate-pulse md:h-12"
                     width="0"
                     height="0"
-                    src="/img/dotNet.svg"
+                    src="/img/dotnet.svg"
                     alt=".Net"
                   />
                 </Tooltip>
