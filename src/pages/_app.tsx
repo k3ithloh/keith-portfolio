@@ -7,6 +7,7 @@ import Footer from "~/components/footer";
 import Side from "~/components/side";
 import Hero from "~/components/hero";
 import About from "~/components/about";
+import Experience from "~/components/experience";
 import { Analytics } from "@vercel/analytics/react";
 
 import { api } from "~/utils/api";
@@ -28,6 +29,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
         <Navbar></Navbar>
         <Hero></Hero>
         <About></About>
+        <Experience></Experience>
         <Component {...pageProps} />
         <Analytics />
         <Side></Side>
