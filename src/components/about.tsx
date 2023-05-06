@@ -20,7 +20,7 @@ const About = () => {
   }, []);
 
   return (
-    <div ref={aboutRef} id="about" className="flex h-[95vh] flex-col items-center justify-center px-10 md:px-28 mb-40">
+    <div ref={aboutRef} id="about" className="flex h-[95vh] flex-col items-center justify-center px-10 md:px-28 mb-48">
       <div className=" flex max-w-6xl flex-wrap">
         <h1 className=" mt-0 text-2xl font-bold text-white md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
           About Me
