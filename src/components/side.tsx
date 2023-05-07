@@ -3,7 +3,7 @@ import SideElementRight from "./sideElementRight";
 
 const Side = () => {
     return (
-        <div className="invisible md:visible relative h-screen">
+        <div className="invisible md:visible relative h-fit">
             <div className="fixed bottom-0 left-2 w-32 h-58">
                 <SideElementLeft />
             </div>

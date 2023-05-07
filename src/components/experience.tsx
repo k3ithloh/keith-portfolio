@@ -9,7 +9,7 @@ const Experience = () => {
   useEffect(() => {
     const setHeight = () => {
       if (experienceRef.current) {
-        experienceRef.current.style.height = `${window.innerHeight * 0.95}px`;
+        experienceRef.current.style.height = `${window.innerHeight * 1}px`;
       }
     };
 
@@ -25,7 +25,7 @@ const Experience = () => {
     <div
       ref={experienceRef}
       id="experience"
-      className="mb-64 flex h-[95vh] flex-col items-center justify-center px-10 pb-64 md:px-28"
+      className="flex h-screen flex-col items-center justify-center px-10 mb-48 pb-48 md:px-28"
     >
       <div className="flex max-w-6xl flex-wrap">
         <h1 className="-mb-2 mt-12 grow text-2xl font-bold text-white md:mb-4 md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">

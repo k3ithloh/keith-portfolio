@@ -27,7 +27,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
   return (
     <main className={askpekta.className}>
       <SessionProvider session={session}>
-      <Component {...pageProps} />
+      
         <Navbar></Navbar>
         <Hero></Hero>
         <About></About>
@@ -36,6 +36,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
         <Analytics />
         <Side></Side>
         <Footer></Footer>
+        <Component {...pageProps} />
       </SessionProvider>
     </main>
   );
