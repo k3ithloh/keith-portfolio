@@ -8,6 +8,7 @@ import Side from "~/components/side";
 import Hero from "~/components/hero";
 import About from "~/components/about";
 import Experience from "~/components/experience";
+import Projects from "~/components/projects";
 import { Analytics } from "@vercel/analytics/react";
 
 import { api } from "~/utils/api";
@@ -31,6 +32,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
         <About></About>
         <Experience></Experience>
         <Component {...pageProps} />
+        <Projects></Projects>
         <Analytics />
         <Side></Side>
         <Footer></Footer>
