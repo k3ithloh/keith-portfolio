@@ -25,7 +25,7 @@ const Experience = () => {
     <div
       ref={experienceRef}
       id="experience"
-      className="flex h-[95vh] flex-col items-center justify-center px-10 md:px-28"
+      className="mb-64 flex h-[95vh] flex-col items-center justify-center px-10 pb-64 md:px-28"
     >
       <div className="flex max-w-6xl flex-wrap">
         <h1 className="-mb-2 mt-12 grow text-2xl font-bold text-white md:mb-4 md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">

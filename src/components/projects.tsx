@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Tooltip } from "@material-tailwind/react";
 import { useRef, useEffect } from "react";
 import IconRunnerUp from "./icons/runnerup";
+import IconVmware from "./icons/vmware";
 
 const Projects = () => {
   const projectRef = useRef<HTMLDivElement | null>(null);
@@ -29,104 +30,117 @@ const Projects = () => {
       className="flex h-[95vh] flex-col items-center justify-center px-10 md:px-28"
     >
       <div className="flex max-w-6xl flex-wrap">
-        <h1 className="mb-4 grow text-2xl font-bold text-white md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
+        <h1 className="-mb-2 mt-12 grow text-2xl font-bold text-white md:mb-4 md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
           Things I&apos;ve Built
         </h1>
-        <div className="py-8">
+        <div className="ml-4 py-8 md:ml-10">
           <ol className="relative border-l border-white  dark:border-white">
-            <li className="mb-10 pl-5">
-              <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700">
-                <Image
-                  className="m-1 h-6 w-auto hover:animate-pulse md:h-12"
-                  width="0"
-                  height="0"
-                  src="/img/ellipsis.svg"
-                  alt="Ellipsis"
-                />
-              </div>
-              <div className="flex">
-                <time className="mb-2 mt-2 text-sm font-normal leading-none text-jet dark:text-jet lg:text-base xl:text-lg 2xl:text-xl">
-                  August 2022
-                </time>
-                <IconRunnerUp></IconRunnerUp>
+            <li className="mb-10 pl-12">
+              <div className="absolute -left-[18px] mt-0 flex rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
+                <Link
+                  href="https://github.com/k3ithloh/gs-service-exchange"
+                  target="_blank"
+                >
+                  <Image
+                    className="relative m-1 inline-flex h-6 w-auto md:h-12"
+                    width="0"
+                    height="0"
+                    src="/img/ellipsis.svg"
+                    alt="Ellipsis"
+                  />
+                </Link>
               </div>
               <h3
                 className="l:text-xl mt-2 text-lg font-semibold text-ebony hover:text-white dark:text-ebony xl:text-2xl 2xl:text-3xl 
               "
               >
                 <Link
-                  href="https://github.com/k3ithloh?tab=repositories"
+                  href="https://github.com/k3ithloh/gs-service-exchange"
                   target="_blank"
                 >
-                  Elipsis Tech Series 2022 Hackathon by Goldman Sachs
+                  Elipsis 2022 Hackathon by Goldman Sachs
                 </Link>
               </h3>
+              <div className="mt-1 flex items-center justify-start">
+                <h3 className="l:text-xl mt-0 text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
+                  Team Rainbow and Unicorns
+                </h3>
+                <IconRunnerUp></IconRunnerUp>
+              </div>
 
-              <h3>1st Runner Up</h3>
-              <h3 className="l:text-xl mt-0 text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
-                Team Rainbow and Unicorns
-              </h3>
               <ul className="py-2 pl-6">
                 <li className="list-disc">
                   <p className="text-sm font-normal text-jet dark:text-jet md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
                     Developed GS Service Exchange, a one stop integrated
-                    marketplace, for B2B and B2C. It is a marketplace, of
-                    Goldman Sachs open banking services,it allows businesses to
-                    integrate their industry-standard services and monitor all
-                    transactions in one place.
+                    marketplace for GS open banking services, it allows
+                    businesses to integrate their industry-standard services and
+                    monitor all transactions in one place.
                   </p>
                 </li>
+                <Image
+                  className="relative mx-4 my-6 inline-flex h-auto w-auto"
+                  width={400}
+                  height={400}
+                  src="/img/macbook-gsexchange.png"
+                  alt="Goldman Sachs Service Exchange"
+                />
               </ul>
-            </li>
-            <li className="mb-10 pl-5">
-              <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700"></div>
-              <time className="mb-2 mt-2 text-sm font-normal leading-none text-jet dark:text-jet lg:text-base xl:text-lg 2xl:text-xl">
-                May 2022 - August 2022
+              <time className="mb-2 mt-2 text-xs font-normal italic leading-none text-jet dark:text-jet lg:text-sm xl:text-base 2xl:text-lg">
+                August 2022
               </time>
+            </li>
+            <li className="mb-10 pl-12">
+              <div className="absolute -left-[18px] mt-0 flex rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
+                <Link href="https://github.com/k3ithloh/GoBook" target="_blank">
+                  <Image
+                    className="relative m-1 inline-flex h-6 w-auto md:h-12"
+                    width="0"
+                    height="0"
+                    src="/img/smu-round.svg"
+                    alt="SMU"
+                  />
+                </Link>
+              </div>
               <h3 className="l:text-xl mt-2 text-lg font-semibold text-ebony hover:text-white dark:text-ebony xl:text-2xl 2xl:text-3xl">
-                <Link href="https://solana.fm/" target="_blank">
-                  SolanaFM
+                <Link href="https://github.com/k3ithloh/GoBook" target="_blank">
+                  IS213 Enterprise Solution Development
                 </Link>
               </h3>
-              <h3 className="l:text-xl  mt-0 text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
-                Software Engineer Intern
-              </h3>
+              <div className="mt-1 flex items-center justify-start">
+                <h3 className="l:text-xl text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
+                  GoBook
+                </h3>
+                <IconVmware></IconVmware>
+              </div>
               <ul className="py-2 pl-6">
                 <li className="list-disc">
                   <p className="text-sm font-normal text-jet dark:text-jet md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-                    Backend development to support business requirements for
-                    SolanaFM&apos;s indexing and explorer processes.
+                    GoBook is a simulated booking web application with a
+                    microservice architecture
                   </p>
                 </li>
                 <li className="list-disc">
                   <p className="text-sm font-normal text-jet dark:text-jet md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-                    Optimizied and documentated the codebase to improve
-                    developer and user experience.
+                    GoBook&apos;s aim is to automate repeated tasks, alleviating
+                    human slips, errors and wastage
                   </p>
                 </li>
+                <li className="list-disc">
+                  <p className="text-sm font-normal text-jet dark:text-jet md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                    Implemented emailing and eticketing system to users
+                  </p>
+                </li>
+                <Image
+                  className="relative mx-4 my-6 inline-flex h-auto w-auto"
+                  width={400}
+                  height={400}
+                  src="/img/mac-gobook.png"
+                  alt="GoBook"
+                />
               </ul>
-            </li>
-            <li className="mb-10 pl-5">
-              <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700"></div>
-              <time className="mb-2 mt-2 text-sm font-normal leading-none text-jet dark:text-jet lg:text-base xl:text-lg 2xl:text-xl">
-                September 2018 - Feburary 2019
+              <time className="mb-2 mt-2 text-xs font-normal italic leading-none text-jet dark:text-jet lg:text-sm xl:text-base 2xl:text-lg">
+                April 2023
               </time>
-              <h3 className="l:text-xl mt-2 text-lg font-semibold text-ebony hover:text-white dark:text-ebony xl:text-2xl 2xl:text-3xl">
-                <Link href="https://www.pbarobotics.com/" target="_blank">
-                  PBA Group - Robotics & Automation
-                </Link>
-              </h3>
-              <h3 className="l:text-xl mt-0 text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
-                R&D Intern
-              </h3>
-              <ul className="py-2 pl-6">
-                <li className="list-disc">
-                  <p className="text-sm font-normal text-jet dark:text-jet md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-                    Developed internal applications to consolidate and automate
-                    the company&apos;s processes.
-                  </p>
-                </li>
-              </ul>
             </li>
           </ol>
         </div>
