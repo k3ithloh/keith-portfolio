@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Tooltip } from "@material-tailwind/react";
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect } from "react";
 
 const Experience = () => {
   const experienceRef = useRef<HTMLDivElement | null>(null);
@@ -14,15 +14,16 @@ const Experience = () => {
     };
 
     setHeight();
-    window.addEventListener('resize', setHeight);
+    window.addEventListener("resize", setHeight);
 
     return () => {
-      window.removeEventListener('resize', setHeight);
+      window.removeEventListener("resize", setHeight);
     };
   }, []);
 
   return (
-    <div ref={experienceRef}
+    <div
+      ref={experienceRef}
       id="experience"
       className="flex h-[95vh] flex-col items-center justify-center px-10 md:px-28"
     >
@@ -37,13 +38,15 @@ const Experience = () => {
               <time className="mb-2 mt-2 text-sm font-normal leading-none text-jet dark:text-jet lg:text-base xl:text-lg 2xl:text-xl">
                 May 2023 - Present
               </time>
-              <h3 className="mt-2 text-lg font-semibold text-ebony hover:text-white dark:text-ebony l:text-xl xl:text-2xl 2xl:text-3xl 
-              ">
+              <h3
+                className="l:text-xl mt-2 text-lg font-semibold text-ebony hover:text-white dark:text-ebony xl:text-2xl 2xl:text-3xl 
+              "
+              >
                 <Link href="https://www.tech.gov.sg/" target="_blank">
                   GovTech - Government Digital Services
                 </Link>
               </h3>
-              <h3 className="mt-0 text-lg font-semibold text-ebony dark:text-ebony l:text-xl xl:text-2xl 2xl:text-3xl">
+              <h3 className="l:text-xl mt-0 text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
                 Software Engineer Intern
               </h3>
               <div className="my-4 flex flex-wrap gap-1 px-2 py-2">
@@ -136,23 +139,23 @@ const Experience = () => {
               <time className="mb-2 mt-2 text-sm font-normal leading-none text-jet dark:text-jet lg:text-base xl:text-lg 2xl:text-xl">
                 May 2022 - August 2022
               </time>
-              <h3 className="mt-2 text-lg font-semibold text-ebony hover:text-white dark:text-ebony l:text-xl xl:text-2xl 2xl:text-3xl">
+              <h3 className="l:text-xl mt-2 text-lg font-semibold text-ebony hover:text-white dark:text-ebony xl:text-2xl 2xl:text-3xl">
                 <Link href="https://solana.fm/" target="_blank">
                   SolanaFM
                 </Link>
               </h3>
-              <h3 className="mt-0  text-lg font-semibold text-ebony dark:text-ebony l:text-xl xl:text-2xl 2xl:text-3xl">
+              <h3 className="l:text-xl  mt-0 text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
                 Software Engineer Intern
               </h3>
-              <ul className="pl-6 py-2">
+              <ul className="py-2 pl-6">
                 <li className="list-disc">
-                  <p className="text-sm md:text-base font-normal text-jet dark:text-jet lg:text-lg xl:text-xl 2xl:text-2xl">
+                  <p className="text-sm font-normal text-jet dark:text-jet md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
                     Backend development to support business requirements for
                     SolanaFM&apos;s indexing and explorer processes.
                   </p>
                 </li>
                 <li className="list-disc">
-                  <p className="text-sm md:text-base font-normal text-jet dark:text-jet lg:text-lg xl:text-xl 2xl:text-2xl">
+                  <p className="text-sm font-normal text-jet dark:text-jet md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
                     Optimizied and documentated the codebase to improve
                     developer and user experience.
                   </p>
@@ -252,20 +255,20 @@ const Experience = () => {
             </li>
             <li className="mb-10 pl-5">
               <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700"></div>
-              <time className="dark:text-jet mb-2 mt-2 text-sm font-normal leading-none text-jet lg:text-base xl:text-lg 2xl:text-xl">
+              <time className="mb-2 mt-2 text-sm font-normal leading-none text-jet dark:text-jet lg:text-base xl:text-lg 2xl:text-xl">
                 September 2018 - Feburary 2019
               </time>
-              <h3 className="mt-2 text-lg font-semibold text-ebony hover:text-white dark:text-ebony l:text-xl xl:text-2xl 2xl:text-3xl">
+              <h3 className="l:text-xl mt-2 text-lg font-semibold text-ebony hover:text-white dark:text-ebony xl:text-2xl 2xl:text-3xl">
                 <Link href="https://www.pbarobotics.com/" target="_blank">
                   PBA Group - Robotics & Automation
                 </Link>
               </h3>
-              <h3 className="mt-0 text-lg font-semibold text-ebony dark:text-ebony l:text-xl xl:text-2xl 2xl:text-3xl">
+              <h3 className="l:text-xl mt-0 text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
                 R&D Intern
               </h3>
-              <ul className="pl-6 py-2">
+              <ul className="py-2 pl-6">
                 <li className="list-disc">
-                  <p className="text-sm md:text-base font-normal text-jet dark:text-jet lg:text-lg xl:text-xl 2xl:text-2xl">
+                  <p className="text-sm font-normal text-jet dark:text-jet md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
                     Developed internal applications to consolidate and automate
                     the company&apos;s processes.
                   </p>
