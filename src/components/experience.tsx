@@ -284,7 +284,7 @@ const Experience = () => {
             </li>
             <li className="mb-10 pl-12">
               <div className="absolute -left-[18px] mt-0 rounded-full  border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
-                <Link href="https://solana.fm/" target="_blank">
+                <Link href="https://www.pbarobotics.com/" target="_blank">
                   <Image
                     className="m-1 h-6 w-auto md:h-12"
                     width="100"
