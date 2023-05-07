@@ -27,7 +27,7 @@ const Projects = () => {
     <div
       ref={projectRef}
       id="projects"
-      className="flex h-[95vh] flex-col items-center justify-center px-10 md:px-28"
+      className="flex h-[95vh] flex-col items-center justify-center px-10 mx-10 md:px-28"
     >
       <div className="flex max-w-6xl flex-wrap">
         <h1 className="-mb-2 mt-12 grow text-2xl font-bold text-white md:mb-4 md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
@@ -61,7 +61,7 @@ const Projects = () => {
                   Elipsis 2022 Hackathon by Goldman Sachs
                 </Link>
               </h3>
-              <div className="mt-1 flex items-center justify-start">
+              <div className="mt-1 flex flex-wrap justify-start gap-x-1">
                 <h3 className="l:text-xl mt-0 text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
                   Team Rainbow and Unicorns
                 </h3>
@@ -106,7 +106,7 @@ const Projects = () => {
                   IS213 Enterprise Solution Development
                 </Link>
               </h3>
-              <div className="mt-1 flex items-center justify-start">
+              <div className="mt-1 flex flex-wrap justify-start gap-x-1">
                 <h3 className="l:text-xl text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
                   GoBook
                 </h3>

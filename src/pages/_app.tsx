@@ -27,12 +27,13 @@ const MyApp: AppType<{ session: Session | null }> = ({
   return (
     <main className={askpekta.className}>
       <SessionProvider session={session}>
+      <Component {...pageProps} />
         <Navbar></Navbar>
         <Hero></Hero>
         <About></About>
         <Experience></Experience>
-        <Component {...pageProps} />
         <Projects></Projects>
+        
         <Analytics />
         <Side></Side>
         <Footer></Footer>

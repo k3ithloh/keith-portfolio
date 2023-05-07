@@ -2,7 +2,7 @@ import React from "react";
 
 const IconRunnerUp = () => (
   <svg
-    className="px-4"
+    className=""
     width="126"
     height="28"
     viewBox="0 0 126 28"

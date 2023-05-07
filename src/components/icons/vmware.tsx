@@ -2,7 +2,7 @@ import React from "react";
 
 const IconVmware = () => (
   <svg
-    className="px-4"
+    className=""
     width="251"
     height="28"
     viewBox="0 0 251 28"
