@@ -33,7 +33,6 @@ const MyApp: AppType<{ session: Session | null }> = ({
         <About></About>
         <Experience></Experience>
         <Projects></Projects>
-        
         <Analytics />
         <Side></Side>
         <Footer></Footer>

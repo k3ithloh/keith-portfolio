@@ -61,7 +61,7 @@ const Projects = () => {
                   Elipsis 2022 Hackathon by Goldman Sachs
                 </Link>
               </h3>
-              <div className="mt-1 flex flex-wrap justify-start gap-x-1">
+              <div className="mt-1 flex flex-wrap justify-start gap-x-1 items-center">
                 <h3 className="l:text-xl mt-0 text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
                   Team Rainbow and Unicorns
                 </h3>
@@ -106,7 +106,7 @@ const Projects = () => {
                   IS213 Enterprise Solution Development
                 </Link>
               </h3>
-              <div className="mt-1 flex flex-wrap justify-start gap-x-1">
+              <div className="mt-1 flex flex-wrap justify-start gap-x-1 items-center">
                 <h3 className="l:text-xl text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
                   GoBook
                 </h3>
