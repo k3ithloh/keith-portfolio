@@ -28,7 +28,7 @@ const Projects = () => {
     <div
       ref={projectRef}
       id="projects"
-      className="flex h-fit flex-col items-center justify-center px-10 mx-10 md:px-28 mt-96 pt-96"
+      className="flex h-max flex-col items-center justify-center px-10 mx-10 md:px-28 mt-96 pt-96"
     >
       <div className="flex max-w-6xl flex-wrap">
         <h1 className="-mb-2 mt-12 grow text-2xl font-bold text-white md:mb-4 md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
