@@ -4,26 +4,9 @@ import { Tooltip } from "@material-tailwind/react";
 import { useRef, useEffect } from "react";
 
 const Experience = () => {
-  // const experienceRef = useRef<HTMLDivElement | null>(null);
-
-  // useEffect(() => {
-  //   const setHeight = () => {
-  //     if (experienceRef.current) {
-  //       experienceRef.current.style.height = `${window.innerHeight * 1}px`;
-  //     }
-  //   };
-
-  //   setHeight();
-  //   window.addEventListener("resize", setHeight);
-
-  //   return () => {
-  //     window.removeEventListener("resize", setHeight);
-  //   };
-  // }, []);
 
   return (
     <div
-      // ref={experienceRef}
       id="experience"
       className="flex min-h-screen flex-col items-center justify-center px-10 md:px-28"
     >

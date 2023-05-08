@@ -20,19 +20,6 @@ const Navbar = () => {
     };
   }, [menuOpen]);
 
-  // const handleNavLinkClick = (url: string) => {
-  //   setMenuOpen(false);
-
-
-  //     router.push(url).then(() => {
-  //       const projectsElement = document.getElementById('project');
-  //       if (projectsElement) {
-  //         projectsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  //       }
-  //     });
-
-  // };
-
   return (
     <nav className=" mx-auto rounded-lg px-12 py-6 shadow-inner drop-shadow-xl ">
       <div className="mx-auto flex flex-wrap items-center justify-between gap-x-5 md:flex-nowrap">

@@ -9,25 +9,8 @@ import IconWinner from "./icons/winner";
 const Projects = () => {
   const projectRef = useRef<HTMLDivElement | null>(null);
 
-  // useEffect(() => {
-  //   const setHeight = () => {
-  //     if (projectRef.current) {
-  //       projectRef.current.style.height = `${window.innerHeight * 1}px`;
-  //     }
-  //   };
-
-  //   setHeight();
-  //   window.addEventListener("resize", setHeight);
-
-  //   return () => {
-  //     window.removeEventListener("resize", setHeight);
-  //   };
-  // }, []);
-
   return (
     <div
-      // ref={projectRef}
-      
       className="flex min-h-screen flex-col items-center justify-center px-10 mx-10 md:px-28"
     >
       <div id="projects" className="flex max-w-6xl flex-wrap">
