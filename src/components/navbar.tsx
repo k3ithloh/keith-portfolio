@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Link from "next/link";
+import { useRouter } from 'next/router';
 import config, { NavLink } from "~/config";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,14 +20,27 @@ const Navbar = () => {
     };
   }, [menuOpen]);
 
+  // const handleNavLinkClick = (url: string) => {
+  //   setMenuOpen(false);
+
+
+  //     router.push(url).then(() => {
+  //       const projectsElement = document.getElementById('project');
+  //       if (projectsElement) {
+  //         projectsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  //       }
+  //     });
+
+  // };
+
   return (
     <nav className=" mx-auto rounded-lg px-12 py-6 shadow-inner drop-shadow-xl ">
       <div className="mx-auto flex flex-wrap items-center justify-between gap-x-5 md:flex-nowrap">
         <div className="w-full flex justify-between gap-x-2 md:flex">
           <div>
             <Link href="/">
-              <div className="text-xl font-bold text-ebony transition ease-in-out delay-150 hover:text-white duration-300 xl:text-3xl lg:text-2xl">
-                Keith Loh
+              <div className=" text-xl font-bold text-ebony transition ease-in-out delay-150 hover:text-white duration-300 xl:text-3xl lg:text-2xl">
+                Keith
               </div>
             </Link>
           </div>
