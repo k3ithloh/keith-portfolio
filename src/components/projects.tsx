@@ -413,7 +413,7 @@ const Projects = () => {
                   href="https://github.com/k3ithloh/WAD2-SGXchange"
                   target="_blank"
                 >
-                  SMU .Hack Heap Hackathon
+                  SMU .Hack HEAP Hackathon
                 </Link>
               </h3>
               <div className="mt-1 flex flex-wrap justify-start gap-x-1 items-center">
