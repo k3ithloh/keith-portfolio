@@ -4,6 +4,14 @@ import Head from "next/head";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { api } from "~/utils/api";
 
+import Navbar from "~/components/navbar";
+import Footer from "~/components/footer";
+import Side from "~/components/side";
+import Hero from "~/components/hero";
+import About from "~/components/about";
+import Experience from "~/components/experience";
+import Projects from "~/components/projects";
+
 const Home: NextPage = () => {
   // const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
@@ -14,8 +22,14 @@ const Home: NextPage = () => {
         <meta name="description" content="Keith's Portfolio Page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex justify-center">
-        {/* NavBar */}
+      <div>
+      <Navbar></Navbar>
+      <main className="flex flex-col min-h-screen">
+        <Hero></Hero>
+        <About></About>
+        <Experience></Experience>
+        <Projects></Projects>
+        <Side></Side>
         {/* <div className=""></div>
         <div className="container flex flex-col items-center justify-center">
           <div className="text">discord login</div>
@@ -24,6 +38,9 @@ const Home: NextPage = () => {
           </div>
         </div> */}
       </main>
+      <Footer></Footer>
+      </div>
+      
     </>
   );
 };

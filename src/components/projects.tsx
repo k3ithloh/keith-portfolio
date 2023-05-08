@@ -9,29 +9,12 @@ import IconWinner from "./icons/winner";
 const Projects = () => {
   const projectRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    const setHeight = () => {
-      if (projectRef.current) {
-        projectRef.current.style.height = `${window.innerHeight * 1}px`;
-      }
-    };
-
-    setHeight();
-    window.addEventListener("resize", setHeight);
-
-    return () => {
-      window.removeEventListener("resize", setHeight);
-    };
-  }, []);
-
   return (
     <div
-      ref={projectRef}
-      id="projects"
-      className="flex h-max flex-col items-center justify-center px-10 mx-10 md:px-28 mt-96 pt-96"
+      className="flex min-h-screen flex-col items-center justify-center px-10 mx-10 md:px-28"
     >
-      <div className="flex max-w-6xl flex-wrap">
-        <h1 className="-mb-2 mt-12 grow text-2xl font-bold text-white md:mb-4 md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
+      <div id="projects" className="flex max-w-6xl flex-wrap">
+        <h1 className="-mb-2 mt-12 grow text-2xl font-bold text-silverDark md:mb-4 md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
           Things I&apos;ve Built
         </h1>
         <div className="ml-4 py-8 md:ml-10">
@@ -430,7 +413,7 @@ const Projects = () => {
                   </p>
                 </li>
                 <Image
-                  className="relative py-6 inline-flex object-cover w=full "
+                  className="relative py-6 inline-flex object-cover w-5/6 md:w-5/6 "
                   width={700}
                   height={700}
                   src="/img/sgexchange-combo.png"

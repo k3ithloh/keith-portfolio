@@ -4,37 +4,20 @@ import { Tooltip } from "@material-tailwind/react";
 import { useRef, useEffect } from "react";
 
 const Experience = () => {
-  const experienceRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    const setHeight = () => {
-      if (experienceRef.current) {
-        experienceRef.current.style.height = `${window.innerHeight * 1}px`;
-      }
-    };
-
-    setHeight();
-    window.addEventListener("resize", setHeight);
-
-    return () => {
-      window.removeEventListener("resize", setHeight);
-    };
-  }, []);
 
   return (
     <div
-      ref={experienceRef}
       id="experience"
-      className="flex h-screen flex-col items-center justify-center px-10 mb-48 pb-48 md:px-28"
+      className="flex min-h-screen flex-col items-center justify-center px-10 md:px-28"
     >
-      <div className="flex max-w-6xl flex-wrap">
-        <h1 className="-mb-2 mt-12 grow text-2xl font-bold text-white md:mb-4 md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
+      <div  className="flex max-w-6xl flex-wrap">
+        <h1 className="-mb-2 mt-12 grow text-2xl font-bold text-silverDark md:mb-4 md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
           Where I&apos;ve Worked
         </h1>
         <div className="ml-4 py-8 md:ml-10">
           <ol className="relative border-l border-white  dark:border-white">
             <li className="mb-10 pl-12">
-              <div className="absolute -left-[18px] mt-0 flex rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
+              <div className="absolute -left-[18px] mt-0 flex rounded-full border border-white bg-gray-200 dark:border-white dark:bg-gray-700 md:-left-8">
                 <Link href="https://www.tech.gov.sg/" target="_blank">
                   {/* <Image
                         className="m-1 h-6 w-auto md:h-12 animate-ping inline-flex absolute opacity-25
