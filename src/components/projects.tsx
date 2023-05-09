@@ -11,16 +11,16 @@ const Projects = () => {
 
   return (
     <div
-      className="flex min-h-screen flex-col items-center justify-center px-10 mx-10 md:px-28"
+      className="flex min-h-screen flex-col items-center justify-center px-10 md:px-28"
     >
       <div id="projects" className="flex max-w-6xl flex-wrap">
-        <h1 className="-mb-2 mt-12 grow text-2xl font-bold text-silverDark md:mb-4 md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
+        <h1 className="-mb-2 mt-12 text-2xl font-bold text-silverDark md:mb-4 md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
           Things I&apos;ve Built
         </h1>
         <div className="ml-4 py-8 md:ml-10">
           <ol className="relative border-l border-white  dark:border-white">
             <li className="mb-10 pl-12">
-              <div className="absolute -left-[18px] mt-0 flex rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
+              <div className="absolute -left-[18px] flex rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
                 <Link
                   href="https://github.com/k3ithloh/gs-service-exchange"
                   target="_blank"
@@ -45,8 +45,8 @@ const Projects = () => {
                   Elipsis 2022 Hackathon by Goldman Sachs
                 </Link>
               </h3>
-              <div className="mt-1 flex flex-wrap justify-start gap-x-1 items-center">
-                <h3 className="l:text-xl mt-0 text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
+              <div className=" flex flex-wrap justify-start gap-x-1 items-center">
+                <h3 className="l:text-xl text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
                   Team Rainbow and Unicorns
                 </h3>
                 <IconRunnerUp></IconRunnerUp>
@@ -62,7 +62,7 @@ const Projects = () => {
                   </p>
                 </li>
                 <Image
-                  className="relative py-6 inline-flex object-cover w=full lg:w-1/2"
+                  className="relative py-6 inline-flex object-cover w-3/4 lg:w-1/2"
                   width={500}
                   height={500}
                   src="/img/macbook-gsexchange.png"
@@ -184,7 +184,7 @@ const Projects = () => {
                   IS213 Enterprise Solution Development
                 </Link>
               </h3>
-              <div className="mt-1 flex flex-wrap justify-start gap-x-1 items-center">
+              <div className="flex flex-wrap justify-start gap-x-1 items-center">
                 <h3 className="l:text-xl text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
                   GoBook
                 </h3>
@@ -203,7 +203,7 @@ const Projects = () => {
                   </p>
                 </li>
                 <Image
-                  className="relative py-6 inline-flex object-cover w-full lg:w-1/2"
+                  className="relative py-6 inline-flex object-cover w-3/4 lg:w-1/2"
                   width={500}
                   height={500}
                   src="/img/mac-gobook.png"
@@ -234,19 +234,6 @@ const Projects = () => {
                     height="0"
                     src="/img/react.svg"
                     alt="React"
-                  />
-                </Tooltip>
-                <Tooltip
-                  className="bg-silver"
-                  content="Vite"
-                  placement="bottom"
-                >
-                  <Image
-                    className="m-1 h-6 w-auto hover:animate-pulse md:h-12"
-                    width="0"
-                    height="0"
-                    src="/img/vite.svg"
-                    alt="Vite"
                   />
                 </Tooltip>
                 <Tooltip
@@ -374,7 +361,7 @@ const Projects = () => {
               </time>
             </li>
             <li className="mb-10 pl-12">
-              <div className="absolute -left-[18px] mt-0 flex rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
+              <div className="absolute -left-[18px] flex rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
                 <Link
                   href="https://github.com/k3ithloh/WAD2-SGXchange"
                   target="_blank"
@@ -399,8 +386,8 @@ const Projects = () => {
                   SMU .Hack HEAP Hackathon
                 </Link>
               </h3>
-              <div className="mt-1 flex flex-wrap justify-start gap-x-1 items-center">
-                <h3 className="l:text-xl mt-0 text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
+              <div className="flex flex-wrap justify-start gap-x-1 items-center">
+                <h3 className="l:text-xl text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
                   ExchangeLah!
                 </h3>
                 <IconWinner></IconWinner>
@@ -413,7 +400,7 @@ const Projects = () => {
                   </p>
                 </li>
                 <Image
-                  className="relative py-6 inline-flex object-cover w-5/6 md:w-5/6 "
+                  className="relative py-6 inline-flex object-cover w-3/4 md:w-4/6 "
                   width={700}
                   height={700}
                   src="/img/sgexchange-combo.png"
@@ -513,19 +500,6 @@ const Projects = () => {
                 </Tooltip>
                 <Tooltip
                   className="bg-silver"
-                  content="Firebase"
-                  placement="bottom"
-                >
-                  <Image
-                    className="m-1 h-6 w-auto hover:animate-pulse md:h-12"
-                    width="0"
-                    height="0"
-                    src="/img/firebase.svg"
-                    alt="Firebase"
-                  />
-                </Tooltip>
-                <Tooltip
-                  className="bg-silver"
                   content="AWS"
                   placement="bottom"
                 >
@@ -542,6 +516,33 @@ const Projects = () => {
               <time className="mb-2 mt-2 text-xs font-normal italic leading-none text-jet dark:text-jet lg:text-sm xl:text-base 2xl:text-lg">
                 July 2022
               </time>
+            </li>
+            <li className="mb-10 pl-12 pb-24">
+              <div className="absolute -left-[18px] flex rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
+                <Link
+                  href="https://github.com/k3ithloh/"
+                  target="_blank"
+                >
+                  <Image
+                    className="relative m-1 inline-flex h-6 w-auto md:h-12"
+                    width="0"
+                    height="0"
+                    src="/img/github-octocat.svg"
+                    alt="Github"
+                  />
+                </Link>
+              </div>
+              <h3
+                className="l:text-xl text-lg font-semibold text-ebony hover:text-white dark:text-ebony xl:text-2xl 2xl:text-3xl pt-3
+              "
+              >
+                <Link
+                  href="https://github.com/k3ithloh/"
+                  target="_blank"
+                >
+                  More projects on my Github! @k3ithloh
+                </Link>
+              </h3>
             </li>
           </ol>
         </div>
