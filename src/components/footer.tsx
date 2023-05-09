@@ -4,7 +4,7 @@ import Icon from './icons/icons';
 
 const Footer = () => {
   return (
-    <footer className="rounded-lg px-12 py-10 h-auto mt-96"> 
+    <footer className="rounded-lg px-12 py-10 h-auto"> 
       <div className="visible md:invisible flex flex-wrap items-center justify-center gap-x-5">
           {config.socialMedia &&
           config.socialMedia.map(({ url, name }: SocialMedia, i) => (

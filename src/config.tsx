@@ -52,10 +52,10 @@ export interface SocialMedia {
         name: "Projects",
         url: "#projects",
       },
-      {
-        name: "Contact",
-        url: "#contact",
-      },
+      // {
+      //   name: "Contact",
+      //   url: "#contact",
+      // },
     ],
   };
   

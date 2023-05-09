@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Link from "next/link";
-import { useRouter } from 'next/router';
 import config, { NavLink } from "~/config";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,8 +24,8 @@ const Navbar = () => {
         <div className="w-full flex justify-between gap-x-2 md:flex">
           <div>
             <Link href="/">
-              <div className=" text-xl font-bold text-ebony transition ease-in-out delay-150 hover:text-white duration-300 xl:text-3xl lg:text-2xl">
-                Keith
+              <div className="text-xl font-bold text-ebony transition ease-in-out delay-150 hover:text-white duration-300 xl:text-3xl lg:text-2xl">
+                Keith Loh
               </div>
             </Link>
           </div>
@@ -50,7 +48,7 @@ const Navbar = () => {
           <div
             className={`${
               menuOpen ? 'block' : 'hidden'
-            } md:flex items-center justify-between gap-x-6 md:flex-wrap fixed md:fixed top-0 right-0 md:mt-7 mt-20 mr-6`}
+            } md:flex items-center justify-between gap-x-6 md:flex-wrap fixed sm:w-auto top-0 right-0 md:mt-7 mt-20 mr-6 `}
           >
             <ol className="flex justify-evenly md:flex-row flex-col list-none">
               {config.navLinks &&
