@@ -533,7 +533,7 @@ const Projects = () => {
                 </Link>
               </div>
               <h3
-                className="l:text-xl text-lg font-semibold text-ebony hover:text-white dark:text-ebony xl:text-2xl 2xl:text-3xl pt-3
+                className="l:text-xl text-lg font-semibold text-ebony hover:text-white dark:text-ebony xl:text-2xl 2xl:text-3xl md:pt-3
               "
               >
                 <Link
