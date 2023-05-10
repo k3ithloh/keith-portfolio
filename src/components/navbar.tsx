@@ -19,7 +19,7 @@ const Navbar = () => {
   }, [menuOpen]);
 
   return (
-    <nav className=" mx-auto rounded-lg px-12 py-6 shadow-inner drop-shadow-xl ">
+    <nav className=" mx-auto rounded-lg px-12 py-6 shadow-inner drop-shadow-xl">
       <div className="mx-auto flex flex-wrap items-center justify-between gap-x-5 md:flex-nowrap">
         <div className="w-full flex justify-between gap-x-2 md:flex">
           <div>

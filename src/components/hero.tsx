@@ -5,8 +5,8 @@ const Hero = () => {
   const heroRef = useRef<HTMLDivElement | null>(null);
   
   return (
-    <div id="" className="flex justify-center items-center h-[92vh] sm:h-[95vh] -mx-1 md:mx-0 md:px-28">
-      <div className="px-10 grid grid-cols-1 justify-start content-center overflow-hidden items-center ">
+    <div id="" className="flex justify-center items-center h-[92vh] sm:h-[85vh] -mx-1 md:mx-0 md:px-28">
+      <div className="px-10 grid grid-cols-1 justify-start content-center overflow-hidden items-center pb-20 md:pb-18">
       <h5 className=" mb-1 md:mb-4 font-mono text-base md:text-lg text-ebony lg:text-xl xl:text-2xl 2xl:text-3xl">Hi my name is </h5>
       <h1 className="mb-1 md:mb-4 font-bold text-2xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-silverDark">Keith Loh.</h1>
       <h1 className="mb-2 lg:mb-8 font-bold text-2xl md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-silver">

@@ -20,7 +20,7 @@ const About = () => {
   // }, []);
 
   return (
-    <div id="about" className="flex h-screen flex-col items-center justify-center px-10 md:px-28">
+    <div id="about" className="flex h-[75vh] md:h-[65vh] items-center flex-col justify-center px-10 md:px-28">
       <div className=" flex max-w-6xl flex-wrap">
         <h1 className=" mt-0 text-2xl font-bold text-silverDark md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
           About Me
