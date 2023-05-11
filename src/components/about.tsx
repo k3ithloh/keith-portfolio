@@ -1,28 +1,14 @@
 import Image from "next/image";
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect } from "react";
 
 const About = () => {
-  const aboutRef = useRef<HTMLDivElement | null>(null);
-
-  // useEffect(() => {
-  //   const setHeight = () => {
-  //     if (aboutRef.current) {
-  //       aboutRef.current.style.height = `${window.innerHeight * 0.95}px`;
-  //     }
-  //   };
-
-  //   setHeight();
-  //   window.addEventListener('resize', setHeight);
-
-  //   return () => {
-  //     window.removeEventListener('resize', setHeight);
-  //   };
-  // }, []);
-
   return (
-    <div id="about" className="flex h-[75vh] md:h-[65vh] items-center flex-col justify-center px-10 md:px-28">
+    <div
+      id="about"
+      className=" flex h-[75vh] flex-col items-center justify-center px-10 md:h-[65vh] md:px-28"
+    >
       <div className=" flex max-w-6xl flex-wrap">
-        <h1 className=" mt-0 text-2xl font-bold text-silverDark md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
+        <h1 className="mt-0 text-2xl font-bold text-silverDark  md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
           About Me
         </h1>
         <div className=" grid w-full grid-cols-1 place-items-center lg:grid-cols-2 ">

@@ -2,6 +2,8 @@ import { type AppType } from "next/app";
 import { type Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
 import localFont from "next/font/local";
+// import { gsap } from "gsap";
+import "@animxyz/core";
 
 import { Analytics } from "@vercel/analytics/react";
 
