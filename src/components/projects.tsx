@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Tooltip } from "@material-tailwind/react";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import IconRunnerUp from "./icons/runnerup";
 import IconVmware from "./icons/vmware";
 import IconWinner from "./icons/winner";

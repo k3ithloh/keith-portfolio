@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useRef, useEffect } from "react";
 
 const About = () => {
   return (
@@ -8,7 +7,7 @@ const About = () => {
       className=" flex h-[75vh] flex-col items-center justify-center px-10 md:h-[65vh] md:px-28"
     >
       <div className=" flex max-w-6xl flex-wrap">
-        <h1 className="mt-0 text-2xl font-bold text-silverDark  md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
+        <h1 className="mt-0 text-2xl font-bold  text-silverDark md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
           About Me
         </h1>
         <div className=" grid w-full grid-cols-1 place-items-center lg:grid-cols-2 ">
