@@ -19,28 +19,43 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Keith Loh</title>
-        <meta name="description" content="Keith's Portfolio Page" />
+        <meta property="og:url" content="keithloh.dev" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:alt" content="Keith Loh" />
+        <meta property="og:title" content="Keith Loh" />
+        <meta
+          property="og:description"
+          content="Keith Loh's Personal Portfolio"
+        />
+        <meta name="description" content="Keith Loh's Personal Portfolio" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@k3ithloh" />
+        <meta name="twitter:title" content="Keith Loh" />
+        <meta
+          name="twitter:description"
+          content="Keith Loh's Personal Portfolio"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-      <Navbar></Navbar>
-      <main className="flex flex-col min-h-screen">
-        <Hero></Hero>
-        <About></About>
-        <Experience></Experience>
-        <Projects></Projects>
-        <Side></Side>
-        {/* <div className=""></div>
+        <Navbar></Navbar>
+        <main className="flex min-h-screen flex-col">
+          <Hero></Hero>
+          <About></About>
+          <Experience></Experience>
+          <Projects></Projects>
+          <Side></Side>
+          {/* <div className=""></div>
         <div className="container flex flex-col items-center justify-center">
           <div className="text">discord login</div>
           <div className="flex flex-col items-center gap-2">
             <AuthShowcase />
           </div>
         </div> */}
-      </main>
-      <Footer></Footer>
+        </main>
+        <Footer></Footer>
       </div>
-      
     </>
   );
 };
