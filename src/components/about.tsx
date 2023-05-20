@@ -1,31 +1,51 @@
 import Image from "next/image";
-import { useRef, useEffect } from 'react';
+import { useEffect, useRef, useState } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 const About = () => {
-  const aboutRef = useRef<HTMLDivElement | null>(null);
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const isInView = useInView(ref);
 
-  // useEffect(() => {
-  //   const setHeight = () => {
-  //     if (aboutRef.current) {
-  //       aboutRef.current.style.height = `${window.innerHeight * 0.95}px`;
-  //     }
-  //   };
+  useEffect(() => {
+    if (isInView) {
+      void controls.start("visible");
+    }
+  }, [controls, isInView]);
 
-  //   setHeight();
-  //   window.addEventListener('resize', setHeight);
-
-  //   return () => {
-  //     window.removeEventListener('resize', setHeight);
-  //   };
-  // }, []);
-
+  const fadeIn = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+        when: "beforeChildren",
+        staggerChildren: 0.2,
+      },
+    },
+  };
   return (
-    <div id="about" className="flex h-[75vh] md:h-[65vh] items-center flex-col justify-center px-10 md:px-28">
-      <div className=" flex max-w-6xl flex-wrap">
-        <h1 className=" mt-0 text-2xl font-bold text-silverDark md:text-4xl  lg:text-6xl xl:text-7xl 2xl:text-8xl">
+    <div
+      id="about"
+      className=" flex h-[75vh] flex-col items-center justify-center px-10 md:h-[65vh] md:px-28"
+    >
+      <motion.div ref={ref} className=" flex max-w-6xl flex-wrap">
+        <motion.h1
+          className="mt-0 text-2xl font-bold  text-silverDark md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
+          variants={fadeIn}
+          initial="hidden"
+          animate={controls}
+        >
           About Me
-        </h1>
-        <div className=" grid w-full grid-cols-1 place-items-center lg:grid-cols-2 ">
+        </motion.h1>
+        <motion.div
+          className=" grid w-full grid-cols-1 place-items-center lg:grid-cols-2 "
+          variants={fadeIn}
+          initial="hidden"
+          animate={controls}
+        >
           <div className="col-span-1 mt-4 content-center pb-8 text-sm text-ebony md:mt-8 md:pb-16 md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
             {" "}
             I&apos;m a sophmore year Information Systems student at Singapore
@@ -45,8 +65,8 @@ const About = () => {
               alt="keith"
             />
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

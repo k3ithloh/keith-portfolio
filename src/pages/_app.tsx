@@ -4,7 +4,6 @@ import { SessionProvider } from "next-auth/react";
 import localFont from "next/font/local";
 
 import { Analytics } from "@vercel/analytics/react";
-
 import { api } from "~/utils/api";
 import "~/styles/globals.css";
 

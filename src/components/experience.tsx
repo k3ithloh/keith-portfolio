@@ -2,21 +2,54 @@ import Image from "next/image";
 import Link from "next/link";
 import { Tooltip } from "@material-tailwind/react";
 import { useRef, useEffect } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 const Experience = () => {
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const isInView = useInView(ref);
 
+  useEffect(() => {
+    if (isInView) {
+      void controls.start("visible");
+    }
+  }, [controls, isInView]);
+
+  const fadeLeft = {
+    hidden: { opacity: 0, x: -100 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+        when: "beforeChildren",
+        staggerChildren: 1,
+      },
+    },
+  };
   return (
-    <div
-     
-      className="flex min-h-screen flex-col items-center justify-center px-10 md:px-28 pt-10"
-    >
-      <div  id="experience" className="flex max-w-6xl flex-wrap">
-        <h1 className="-mb-2 mt-12 text-2xl font-bold text-silverDark md:mb-4 md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
+    <div className="flex min-h-screen flex-col items-center justify-center px-10 pt-10 md:px-28">
+      <motion.div
+        ref={ref}
+        id="experience"
+        className="flex max-w-6xl flex-wrap"
+        variants={fadeLeft}
+      >
+        <motion.h1
+          className="-mb-2 mt-12 text-2xl font-bold text-silverDark md:mb-4 md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl"
+          variants={fadeLeft}
+        >
           Where I&apos;ve Worked
-        </h1>
+        </motion.h1>
         <div className="ml-4 py-8 md:ml-10">
           <ol className="relative border-l border-white  dark:border-white">
-            <li className="mb-10 pl-12">
+            <motion.li
+              className="mb-10 pl-12"
+              variants={fadeLeft}
+              initial="hidden"
+              animate={controls}
+            >
               <div className="absolute -left-[18px] flex rounded-full border border-white bg-gray-200 dark:border-white dark:bg-gray-700 md:-left-8">
                 <Link href="https://www.tech.gov.sg/" target="_blank">
                   {/* <Image
@@ -134,7 +167,7 @@ const Experience = () => {
                     alt="node.js"
                   />
                 </Tooltip>
-                 <Tooltip
+                <Tooltip
                   className="bg-silver"
                   content="Redis"
                   placement="bottom"
@@ -147,11 +180,7 @@ const Experience = () => {
                     alt="Redis"
                   />
                 </Tooltip>
-                <Tooltip
-                  className="bg-silver"
-                  content="AWS"
-                  placement="bottom"
-                >
+                <Tooltip className="bg-silver" content="AWS" placement="bottom">
                   <Image
                     className="m-1 h-6 w-auto hover:animate-pulse md:h-12"
                     width="0"
@@ -160,10 +189,14 @@ const Experience = () => {
                     alt="AWS"
                   />
                 </Tooltip>
-                
               </div>
-            </li>
-            <li className="mb-10 pl-12">
+            </motion.li>
+            <motion.li
+              className="mb-10 pl-12"
+              variants={fadeLeft}
+              initial="hidden"
+              animate={controls}
+            >
               <div className="absolute -left-[18px] rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
                 <Link href="https://solana.fm/" target="_blank">
                   <Image
@@ -200,7 +233,7 @@ const Experience = () => {
                   </p>
                 </li>
               </ul>
-              <div className="my-4 flex flex-wrap gap-1 py-2 cursor-pointer">
+              <div className="my-4 flex cursor-pointer flex-wrap gap-1 py-2">
                 <Tooltip
                   className="bg-silver"
                   content="Rust"
@@ -290,8 +323,13 @@ const Experience = () => {
                   />
                 </Tooltip>
               </div>
-            </li>
-            <li className="mb-10 pl-12">
+            </motion.li>
+            <motion.li
+              className="mb-10 pl-12"
+              variants={fadeLeft}
+              initial="hidden"
+              animate={controls}
+            >
               <div className="absolute -left-[18px] mt-0 rounded-full  border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
                 <Link href="https://www.pbarobotics.com/" target="_blank">
                   <Image
@@ -346,10 +384,10 @@ const Experience = () => {
                   />
                 </Tooltip>
               </div>
-            </li>
+            </motion.li>
           </ol>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
