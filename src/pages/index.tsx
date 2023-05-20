@@ -1,19 +1,30 @@
 import { type NextPage } from "next";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 // import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { api } from "~/utils/api";
 
-import Navbar from "~/components/navbar";
-import Footer from "~/components/footer";
-import Side from "~/components/side";
-import Hero from "~/components/hero";
 import About from "~/components/about";
 import Experience from "~/components/experience";
+import Footer from "~/components/footer";
+import Hero from "~/components/hero";
+import Loading from "~/components/loading";
+import Navbar from "~/components/navbar";
 import Projects from "~/components/projects";
+import Side from "~/components/side";
+import { AnimatePresence } from "framer-motion";
 
 const Home: NextPage = () => {
   // const hello = api.example.hello.useQuery({ text: "from tRPC" });
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
@@ -38,24 +49,30 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <Navbar></Navbar>
-        <main className="flex min-h-screen flex-col">
-          <Hero></Hero>
-          <About></About>
-          <Experience></Experience>
-          <Projects></Projects>
-          <Side></Side>
-          {/* <div className=""></div>
+      <AnimatePresence>
+        {loading ? (
+          <Loading key="loading" />
+        ) : (
+          <div>
+            <Navbar />
+            <main className="flex min-h-screen flex-col">
+              <Hero />
+              <About />
+              <Experience />
+              <Projects />
+              <Side />
+            </main>
+            <Footer />
+          </div>
+        )}
+      </AnimatePresence>
+      {/* <div className=""></div>
         <div className="container flex flex-col items-center justify-center">
           <div className="text">discord login</div>
           <div className="flex flex-col items-center gap-2">
             <AuthShowcase />
           </div>
         </div> */}
-        </main>
-        <Footer></Footer>
-      </div>
     </>
   );
 };

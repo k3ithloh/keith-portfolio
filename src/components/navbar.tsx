@@ -33,7 +33,7 @@ const Navbar = () => {
   };
   return (
     <motion.nav
-      className="mx-auto rounded-lg px-12 py-6 shadow-inner drop-shadow-xl"
+      className="mx-auto rounded-lg px-8 py-6 shadow-inner  drop-shadow-xl md:px-12"
       variants={fadeIn}
       initial="hidden"
       animate="show"
@@ -41,7 +41,7 @@ const Navbar = () => {
       {/* <nav className=" mx-auto rounded-lg px-12 py-6 shadow-inner drop-shadow-xl"> */}
       <div className="mx-auto flex flex-wrap items-center justify-between gap-x-5 md:flex-nowrap">
         <div className="flex w-full justify-between gap-x-2 md:flex">
-          <div>
+          <div className="">
             <Link href="/">
               <div className="text-xl font-bold text-ebony transition delay-150 duration-300 ease-in-out hover:text-white lg:text-2xl xl:text-3xl">
                 Keith Loh
