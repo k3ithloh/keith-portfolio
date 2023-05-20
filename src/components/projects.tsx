@@ -1,23 +1,55 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Tooltip } from "@material-tailwind/react";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 import IconRunnerUp from "./icons/runnerup";
 import IconVmware from "./icons/vmware";
 import IconWinner from "./icons/winner";
 
 const Projects = () => {
-  const projectRef = useRef<HTMLDivElement | null>(null);
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const isInView = useInView(ref);
 
+  useEffect(() => {
+    if (isInView) {
+      void controls.start("visible");
+    }
+  }, [controls, isInView]);
+
+  const fadeLeft = {
+    hidden: { opacity: 0, x: -100 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+        when: "beforeChildren",
+        staggerChildren: 1,
+      },
+    },
+  };
   return (
     <div className="flex min-h-screen flex-col items-center justify-center px-10 md:px-28">
-      <div id="projects" className="flex max-w-6xl flex-wrap">
-        <h1 className="-mb-2 mt-12 text-2xl font-bold text-silverDark md:mb-4 md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
+      <motion.div
+        id="projects"
+        className="flex max-w-6xl flex-wrap"
+        ref={ref}
+        variants={fadeLeft}
+      >
+        <motion.h1 className="-mb-2 mt-12 text-2xl font-bold text-silverDark md:mb-4 md:text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
           Things I&apos;ve Built
-        </h1>
+        </motion.h1>
         <div className="ml-4 py-8 md:ml-10">
           <ol className="relative border-l border-white  dark:border-white">
-            <li className="mb-10 pl-12">
+            <motion.li
+              className="mb-10 pl-12"
+              variants={fadeLeft}
+              initial="hidden"
+              animate={controls}
+            >
               <div className="absolute -left-[18px] flex rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
                 <Link
                   href="https://github.com/k3ithloh/gs-service-exchange"
@@ -164,8 +196,13 @@ const Projects = () => {
               <time className="mb-2 mt-2 text-xs font-normal italic leading-none text-jet dark:text-jet lg:text-sm xl:text-base 2xl:text-lg">
                 August 2022
               </time>
-            </li>
-            <li className="mb-10 pl-12">
+            </motion.li>
+            <motion.li
+              className="mb-10 pl-12"
+              variants={fadeLeft}
+              initial="hidden"
+              animate={controls}
+            >
               <div className="absolute -left-[18px] mt-0 flex rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
                 <Link href="https://github.com/k3ithloh/GoBook" target="_blank">
                   <Image
@@ -360,8 +397,13 @@ const Projects = () => {
               <time className="mb-2 mt-2 text-xs font-normal italic leading-none text-jet dark:text-jet lg:text-sm xl:text-base 2xl:text-lg">
                 April 2023
               </time>
-            </li>
-            <li className="mb-10 pl-12">
+            </motion.li>
+            <motion.li
+              className="mb-10 pl-12"
+              variants={fadeLeft}
+              initial="hidden"
+              animate={controls}
+            >
               <div className="absolute -left-[18px] flex rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
                 <Link
                   href="https://github.com/k3ithloh/WAD2-SGXchange"
@@ -520,8 +562,13 @@ const Projects = () => {
               <time className="mb-2 mt-2 text-xs font-normal italic leading-none text-jet dark:text-jet lg:text-sm xl:text-base 2xl:text-lg">
                 July 2022
               </time>
-            </li>
-            <li className="mb-10 pb-24 pl-12">
+            </motion.li>
+            <motion.li
+              className="mb-10 pb-24 pl-12"
+              variants={fadeLeft}
+              initial="hidden"
+              animate={controls}
+            >
               <div className="absolute -left-[18px] flex rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
                 <Link href="https://github.com/k3ithloh/" target="_blank">
                   <Image
@@ -541,10 +588,10 @@ const Projects = () => {
                   More projects on my Github! @k3ithloh
                 </Link>
               </h3>
-            </li>
+            </motion.li>
           </ol>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
