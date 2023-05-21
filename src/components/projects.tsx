@@ -197,7 +197,12 @@ const Projects = () => {
                 August 2022
               </time>
             </motion.li>
-            <motion.li className="mb-10 pl-12">
+            <motion.li
+              className="mb-10 pl-12"
+              variants={fadeLeft}
+              initial="hidden"
+              animate={controls}
+            >
               <div className="absolute -left-[18px] mt-0 flex rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
                 <Link href="https://github.com/k3ithloh/GoBook" target="_blank">
                   <Image
@@ -393,7 +398,12 @@ const Projects = () => {
                 April 2023
               </time>
             </motion.li>
-            <motion.li className="mb-10 pl-12">
+            <motion.li
+              className="mb-10 pl-12"
+              variants={fadeLeft}
+              initial="hidden"
+              animate={controls}
+            >
               <div className="absolute -left-[18px] flex rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
                 <Link
                   href="https://github.com/k3ithloh/WAD2-SGXchange"
@@ -553,7 +563,12 @@ const Projects = () => {
                 July 2022
               </time>
             </motion.li>
-            <li className="mb-10 pb-24 pl-12">
+            <motion.li
+              className="mb-10 pb-24 pl-12"
+              variants={fadeLeft}
+              initial="hidden"
+              animate={controls}
+            >
               <div className="absolute -left-[18px] flex rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
                 <Link href="https://github.com/k3ithloh/" target="_blank">
                   <Image
@@ -573,7 +588,7 @@ const Projects = () => {
                   More projects on my Github! @k3ithloh
                 </Link>
               </h3>
-            </li>
+            </motion.li>
           </ol>
         </div>
       </motion.div>
