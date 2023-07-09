@@ -84,6 +84,13 @@ const Projects = () => {
               </div>
 
               <ul className="py-2 pl-6">
+                <Image
+                  className="relative inline-flex w-3/4 object-cover py-6 lg:w-1/2"
+                  width={500}
+                  height={500}
+                  src="/img/BFG-Award.jpg"
+                  alt="SafeSpace"
+                />
                 <li className="list-disc">
                   <p className="text-sm font-normal text-jet dark:text-jet md:text-base lg:w-3/4 lg:text-lg xl:text-xl 2xl:text-2xl">
                     SafeSpace, an anonymized digital peer support system using
