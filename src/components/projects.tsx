@@ -6,6 +6,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import IconRunnerUp from "./icons/runnerup";
 import IconVmware from "./icons/vmware";
 import IconWinner from "./icons/winner";
+import IconBFGAward from "./icons/bfg-award";
 
 const Projects = () => {
   const controls = useAnimation();
@@ -44,6 +45,105 @@ const Projects = () => {
         </motion.h1>
         <div className="ml-4 py-8 md:ml-10">
           <ol className="relative border-l border-white  dark:border-white">
+            <motion.li
+              className="mb-10 pl-12"
+              variants={fadeLeft}
+              initial="hidden"
+              animate={controls}
+            >
+              <div className="absolute -left-[18px] flex rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700 md:-left-8">
+                <Link
+                  href="https://github.com/k3ithloh/BFG-SafeSpace"
+                  target="_blank"
+                >
+                  <Image
+                    className="relative m-1 inline-flex h-6 w-auto md:h-12"
+                    width="0"
+                    height="0"
+                    src="/img/bfg.svg"
+                    alt="OGP - Build For Good"
+                  />
+                </Link>
+              </div>
+              <h3
+                className="l:text-xl mt-2 text-lg font-semibold text-ebony hover:text-white dark:text-ebony xl:text-2xl 2xl:text-3xl 
+              "
+              >
+                <Link
+                  href="https://github.com/k3ithloh/BFG-SafeSpace"
+                  target="_blank"
+                >
+                  Build For Good 2023 by Open Government Products
+                </Link>
+              </h3>
+              <div className=" flex flex-wrap items-center justify-start gap-x-1">
+                <h3 className="l:text-xl text-lg font-semibold text-ebony dark:text-ebony xl:text-2xl 2xl:text-3xl">
+                  Team SafeSpace
+                </h3>
+                <IconBFGAward></IconBFGAward>
+              </div>
+
+              <ul className="py-2 pl-6">
+                <li className="list-disc">
+                  <p className="text-sm font-normal text-jet dark:text-jet md:text-base lg:w-3/4 lg:text-lg xl:text-xl 2xl:text-2xl">
+                    SafeSpace, an anonymized digital peer support system using
+                    zero knowledge proof meant to help students in Singapore
+                    cope with the mental health challenges of they face.
+                  </p>
+                </li>
+                <Image
+                  className="relative inline-flex w-3/4 object-cover py-6 lg:w-1/2"
+                  width={500}
+                  height={500}
+                  src="/img/BFG-SafeSpace.png"
+                  alt="SafeSpace"
+                />
+                <div className="my-4 flex cursor-pointer flex-wrap gap-1 py-2">
+                  <Tooltip
+                    className="bg-silver "
+                    content="Python"
+                    placement="bottom"
+                  >
+                    <Image
+                      className="m-1 h-6 w-auto hover:animate-pulse md:h-12"
+                      width="0"
+                      height="0"
+                      src="/img/python.svg"
+                      alt="Python"
+                    />
+                  </Tooltip>
+                  <Tooltip
+                    className="bg-silver"
+                    content="AWS"
+                    placement="bottom"
+                  >
+                    <Image
+                      className="m-1 h-6 w-auto hover:animate-pulse md:h-12"
+                      width="0"
+                      height="0"
+                      src="/img/aws.svg"
+                      alt="AWS EC2"
+                    />
+                  </Tooltip>
+                  <Tooltip
+                    className="bg-silver"
+                    content="MongoDB"
+                    placement="bottom"
+                  >
+                    <Image
+                      className="m-1 h-6 w-auto hover:animate-pulse md:h-12"
+                      width="0"
+                      height="0"
+                      src="/img/mongo.svg"
+                      alt="MongoDB"
+                    />
+                  </Tooltip>
+                </div>
+              </ul>
+              <time className="mb-2 mt-2 text-xs font-normal italic leading-none text-jet dark:text-jet lg:text-sm xl:text-base 2xl:text-lg">
+                July 2023
+              </time>
+            </motion.li>
             <motion.li
               className="mb-10 pl-12"
               variants={fadeLeft}
